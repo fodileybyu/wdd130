@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #0B3954;
+  --secondary-color: #087E8B;
+  --accent1-color: #BFD7EA;
+  --accent2-color: #FF5A5F;
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Verdana, Geneva, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent1-color);
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  color: var(--accent2-color);
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(11, 57, 84, 0.8);
+  padding: 1rem;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(191, 215, 234, 0.9);
+  padding: 1rem;
+}
+
+.hero article img {
+  float: right;
+  width: 150px;
+  margin-left: 1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+section p {
+  line-height: 1.6;
+}
+
+section:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+section:last-of-type h2 {
+  flex-basis: 100%;
+}
+
+figure {
+  text-align: center;
+  flex: 1 1 180px;
+}
+
+figure img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border: 2px solid var(--secondary-color);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  text-align: center;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 40px;
+  height: auto;
+}
