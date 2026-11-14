@@ -1,24 +1,46 @@
 nav {
     background-color: #333;
     padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
-    color: #fff;
-    padding: 0.5rem;
     display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 h1 {
     color: #333;
+    border-bottom: 1px solid #333;
 }
 
 aside {
     width: 20rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
