@@ -211,6 +211,10 @@ footer p {
   flex-wrap: wrap;
 }
 
+.employees h2 {
+  flex-basis: 100%;
+}
+
 .employees figure {
   text-align: center;
 }
